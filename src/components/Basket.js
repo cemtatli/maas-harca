@@ -8,17 +8,17 @@ export default function Basket({ basket, products, total, resetBasket }) {
         <BasketItem item={item} product={products.find((p) => p.id === item.id)} />
       ))}
 
-      <div className="flex items-center justify-start mt-4 gap-2">
-        <p className="text-2xl font-bold dark:text-white ">Toplam:</p>
+      <div className="flex items-center justify-start mt-4 gap-2 ">
+        <p className="text-2xl font-bold dark:text-white ">Toplam </p>:
         <p className="text-2xl font-bold text-primary dark:text-white">{total} ₺</p>
       </div>
 
       <div className="w-full flex items-censter justify-center mt-4 border-t border-slate-200 pt-4">
         <button
           onClick={resetBasket}
-          className="btn-normal rounded-lg flex items-center justify-center w-full md:w-[200px]"
+          className="btn-normal rounded-lg flex items-center justify-center w-full md:w-[300px] py-2"
         >
-          Sıfırla
+          Maaş yetmedi, sıfırla
         </button>
       </div>
     </div>

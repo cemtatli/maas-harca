@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import products from "./products.json";
 import Basket from "./components/Basket";
 import Product from "./components/Product";
+import Banner from "./components/Banner";
 
 import "./index.css";
 
@@ -25,6 +26,7 @@ export default function App() {
   return (
     <>
       <Header total={total} money={money} />
+      <Banner />
       <div className="flex md:flex-wrap gap-4 flex-nowrap flex-col md:flex-row px-4">
         {products.map((product) => (
           <Product

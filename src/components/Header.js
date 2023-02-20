@@ -3,7 +3,7 @@ import { BsLightbulbFill, BsLightbulbOffFill } from "react-icons/bs";
 
 export default function Header({ money, total }) {
   return (
-    <header className="w-full h-20 bg-primary dark:bg-secondary  flex items-center justify-between px-2 gap-4 sticky top-0 z-10 mb-4">
+    <header className="w-full h-20 bg-primary dark:bg-secondary  flex items-center justify-between px-2 gap-4 sticky top-0 z-10 ">
       <div className="text-white text-xl md:text-3xl px-4 font-bold text-start md:text-center w-full select-none">
         {total > 0 && money - total !== 0 && (
           <div>
