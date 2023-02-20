@@ -3,7 +3,7 @@ import BasketItem from "./BasketItem";
 
 export default function Basket({ basket, products, total, resetBasket }) {
   return (
-    <div className="flex items-start justify-center my-5 flex-col px-2 font-bold text-lg dark:text-white">
+    <div className="flex items-start justify-center my-5 flex-col px-4 font-bold text-lg dark:text-white">
       {basket.map((item) => (
         <BasketItem item={item} product={products.find((p) => p.id === item.id)} />
       ))}
